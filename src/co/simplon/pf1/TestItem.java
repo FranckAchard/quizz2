@@ -14,7 +14,6 @@ public class TestItem {
 	}
 	
 	public TestItem(String question, String answer, int points) {
-		super();
 		this.question = question;
 		this.answer = answer;
 		this.points = points;
@@ -46,13 +45,10 @@ public class TestItem {
 		this.points = points;
 	}
 
-
-	@Override
 	// toString
 	public String toString() {
 		return "TestItem [question=" + question + ", answer=" + answer + ", points=" + points + "]";
 	}
-
 	
 	// print attributes methods
 	public void printQuestion() {
@@ -66,6 +62,7 @@ public class TestItem {
 	public void printPoints() {
 		System.out.println("points= " + this.points);
 	}
+	
 	
 	public boolean rightAnswer(String answer) {
 		boolean result=false;

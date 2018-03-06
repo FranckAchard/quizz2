@@ -27,7 +27,7 @@ public class Quizz2 {
 		quizz[0]= new TestItem("Il est sympa Waby?", "oui", 1);
 		quizz[1]= new TestItem("Combien il soulève en kg?", "130", 3);
 		quizz[2]= new TestItem("Le PSG s'en sortira-t-il?", "oui", 7);
-
+		
 		// scanner pour récupérer saisie réponse
 		Scanner input= new Scanner(System.in);
 
@@ -69,6 +69,7 @@ public class Quizz2 {
 			}
 			else {
 				System.out.println("Mauvaise réponse! le score temporaire reste à " + score + " points");
+				System.out.println("La bonne réponse était : " + ti.getAnswer());
 				System.out.println();
 			}
 		}
